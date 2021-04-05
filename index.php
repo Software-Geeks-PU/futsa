@@ -28,7 +28,10 @@
             <h3>random text</h3>
         </div>
     </section>
-    <section >
+    <section class="second-section" >
+        <div class="images"></div>
+        <div class="images"></div>
+        <div class="images"></div>
    
     </section>
 
