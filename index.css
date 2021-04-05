@@ -20,8 +20,6 @@
 }
 
 .first-section {
-  background-image: url(xiaomi_poco_x3_black-5.png);
-  background-repeat: no-repeat;
   background-color: darkgoldenrod;
   height: 400px;
   display: flex;
