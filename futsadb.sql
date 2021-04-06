@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 06, 2021 at 03:45 PM
+-- Generation Time: Apr 06, 2021 at 03:50 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.34
 
@@ -67,12 +67,12 @@ CREATE TABLE `futsaladmin` (
 --
 
 CREATE TABLE `users` (
-  `ID` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL,
   `fullname` varchar(50) CHARACTER SET latin1 NOT NULL,
   `email` varchar(50) CHARACTER SET latin1 NOT NULL,
   `password` varchar(50) CHARACTER SET latin1 NOT NULL,
   `address` varchar(50) CHARACTER SET latin1 NOT NULL,
-  `phnno` bigint(15) NOT NULL
+  `phonenum` bigint(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -101,7 +101,7 @@ ALTER TABLE `futsaladmin`
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -129,7 +129,7 @@ ALTER TABLE `futsaladmin`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
