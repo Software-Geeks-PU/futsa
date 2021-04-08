@@ -16,10 +16,10 @@
                 <h2>FUTSA</h2>
             </div>
             <div class="left-header">
-                <a href="./login/loginView.php">
+                <a href="./login/userLoginView.php">
                     <h2>Login</h2>
                 </a>
-                <a href="./register/registerView.php">
+                <a href="./register/userRegisterView.php">
                     <h2>Register</h2>
                 </a>
             </div>
@@ -36,12 +36,29 @@
             <h3>random text</h3>
         </div>
     </section>
-    <section class="second-section">
-        <div class="images"></div>
-        <div class="images"></div>
-        <div class="images"></div>
 
+    <!--YO 2nd section ko image -->
+    <section class="second-section">
+        <div class="images"> 
+       <div class="insideImage">
+       <img src="./images/pic1.jpeg" alt="someimage" > 
+       <h2>Under images</h2>
+       </div>
+
+       <div class="insideImage">
+       <img src="./images/pic1.jpeg" alt="someimage" > 
+       <h2>Under images</h2>
+       </div>
+
+       <div class="insideImage">
+       <img src="./images/pic1.jpeg" alt="someimage" > 
+       <h2>Under images</h2>
+       </div>
+        </div>
     </section>
+    <footer> 
+        <div class = "footer">igwsiyguads</div>
+    </footer>
 
 </body>
 
