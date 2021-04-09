@@ -37,10 +37,9 @@
         </div>
     </section>
     <section class="second-section">
+        <div class="images"><img src=""/></div>
         <div class="images"></div>
         <div class="images"></div>
-        <div class="images"></div>
-
     </section>
 
 </body>
