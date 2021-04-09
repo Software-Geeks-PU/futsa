@@ -1,0 +1,10 @@
+.form {
+  margin: 50px;
+
+  padding: 50px;
+}
+#username {
+}
+#password {
+  margin-bottom: 45px;
+}

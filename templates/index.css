@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 .nav-bar {
@@ -47,19 +48,18 @@
   border: black;
   border-width: 4px;
   border-style: solid;
-  padding : 50px;
-  
+  padding: 50px;
 }
 
 .images {
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
 .images img {
   height: 100px;
 }
-.footer{
+.footer {
   padding-top: 30px;
   color: blanchedalmond;
   text-align: center;
