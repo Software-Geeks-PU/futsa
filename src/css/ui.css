@@ -1,0 +1,50 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.buttons-container {
+  display: flex;
+  margin: 10px;
+}
+
+.buttons-container div {
+  margin: 10px;
+}
+
+.button-success {
+  color: white;
+  background-color: rgb(122, 190, 122);
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button-success:hover {
+  background-color: green;
+}
+
+.button-danger {
+  width: 70px;
+  color: white;
+  background-color: rgb(209, 97, 112);
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button-danger:hover {
+  background-color: rgb(128, 0, 11);
+}
+
+.button-primary {
+  width: 70px;
+  color: white;
+  background-color: rgb(116, 180, 231);
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button-primary:hover {
+  background-color: rgb(0, 70, 128);
+}
