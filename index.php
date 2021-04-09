@@ -1,5 +1,5 @@
 <?php 
-    include 'header.php';
+    include 'templates/header.php';
 ?>
 
     <section>
@@ -20,5 +20,5 @@
     </section>
 
 <?php 
-    include 'footer.php';
+    include 'templates/footer.php';
 ?>
