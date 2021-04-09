@@ -17,10 +17,10 @@
                 <h2>FUTSA</h2>
             </div>
             <div class="left-header">
-                <a href="../login/userLoginView.php">
+                <a href="./login/userLoginView.php">
                     <h2>Login</h2>
                 </a>
-                <a href="../register/userRegisterView.php">
+                <a href="./register/userRegisterView.php">
                     <h2>Register</h2>
                 </a>
             </div>

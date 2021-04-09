@@ -1,10 +1,15 @@
 .form {
-  margin: 50px;
+  text-align: center;
+}
+.form-container {
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px;
+}
+.email {
+}
 
-  padding: 50px;
-}
-#username {
-}
-#password {
-  margin-bottom: 45px;
+.password {
 }
