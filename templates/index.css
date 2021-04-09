@@ -41,14 +41,16 @@
   top: 100px;
 }
 .second-section {
+  display: flex;
   height: 200px;
-  background-color: aqua;
+  background-color: chocolate;
   border: black;
   border-width: 4px;
   border-style: solid;
   padding : 50px;
   
 }
+
 .images {
   display:flex;
   justify-content: space-between;
