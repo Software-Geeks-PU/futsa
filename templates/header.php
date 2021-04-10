@@ -19,21 +19,14 @@
             </div>
             <div class="left-header">
                 <a href="./login/userLoginView.php">
-
-                    <h2>Login</h2>
+                <div class="button-primary">
+                   <h4>Login</h4>
+                  </div>
                 </a>
                 <a href="./register/userRegisterView.php">
-                    <h2>Register</h2>
                   <div class="button-primary">
-                      login
+                      <h4>Register</h4>
                   </div>
-                 
-                </a>
-                <a href="./register/userRegisterView.php">
-                     <div class="button-danger">
-                    Register
-                  </div>
-
                 </a>
             </div>
         </div>

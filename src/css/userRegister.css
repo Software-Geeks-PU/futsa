@@ -1,13 +1,23 @@
-.form {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  background: url(../../images/back.png);
+  background-position:center ;
 }
+
 .form-container {
+  background:lightgray;
   width: 50%;
   margin: 10px;
+  justify-content: center;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid palevioletred;
   padding: 10px;
 }
+.input{
+  
+}
+
 .email {
 }
 
