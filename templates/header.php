@@ -15,24 +15,15 @@
     <header>
         <div class="nav-bar">
             <div class="logo">
-                <h2>FUTSA</h2>
-            </div>
-            <div class="left-header">
-                <a href="./login/userLoginView.php">
-
-                    <h2>Login</h2>
-                </a>
-                <a href="./register/userRegisterView.php">
-                    <h2>Register</h2>
-                  <div class="button-primary">
-                      login
-                  </div>
-                 
-                </a>
-                <a href="./register/userRegisterView.php">
-                     <div class="button-danger">
-                    Register
-                  </div>
+            <h2>FUTSA</h2>
+        </div>
+        <div class="left-header">
+        
+    <a href="./login/userLoginView.php">
+        <div class="button-primary">Login</div>
+        </a>
+    <a href="register/registerUser/userRegisterView.php">
+        <div class="button-danger">Register</div>
 
                 </a>
             </div>
