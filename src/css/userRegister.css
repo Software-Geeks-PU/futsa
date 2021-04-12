@@ -1,21 +1,49 @@
 body{
   margin: 0;
   padding: 0;
-  background: url(../../images/back.png);
-  background-position:center ;
+  background:url(../../images/ed.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 
 .form-container {
-  background:lightgray;
-  width: 50%;
-  margin: 10px;
-  justify-content: center;
-  text-align: center;
-  border: 2px solid palevioletred;
-  padding: 10px;
+  width:400 px;
+  padding: 8% 0 0;
+  margin: auto;
 }
-.input{
-  
+
+.inside-form-container {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  opacity: 90%;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+input{  
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  border: 1px solid #b3b3b3;
+  font-size: 14px;  
+  border-radius: 4px;
+}
+input:hover{
+  border: 2px solid green;
+  border-radius: 4px;
+}
+a{
+  text-decoration: none;
+  color: blue;
+}
+a:hover{
+  text-decoration: underline;
+  color: blue;
 }
 
 .email {

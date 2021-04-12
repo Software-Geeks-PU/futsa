@@ -1,32 +1,35 @@
+<html>
+<head>
 <link type="text/css" href="../src/css/userRegister.css" rel="stylesheet" >
+<link type="text/css" href="../src/css/ui.css" rel="stylesheet" >
 <link type="text/css" href="../templates/index.css" rel="stylesheet" >
+</head>
 
-<?php
-include '../templates/header.php' 
-?>
+<body>
+   
 <div class="form-container">
-
+   <div class="inside-form-container">
    <form action="">
         <div class="header"><h2>loginBox</h2></div>
-
-        <div class= "input">
-           <label for="label">Username</label>
+      
+        <div class= "">
+          
            <input type="Text" class="input" name="UserName" placeholder="UserName" required/>  
         </div>
-        
-        <div class= "input">
-          <label for="label">Password</label>
-           <input type="Text" class="input" name="Password" placeholder="Password" required/>
+        <br />
+        <div class= "">
+          
+           <input type="password" class="input" name="Password" placeholder="Password" required/>
         </div>
-
+         <br />
         <div class="button-success loginButton">CLick Me</div>
-
+   <br />
         <div>
-          <a href="#"><i>Create account</i></a>
+          <a href="#"><i>Create account</i></a><br />
           <a href="#"><i>forgot Password</i></a>
         </div>
    </form>
+   </div>
 </div>
-<?php
-include '../templates/footer.php' 
-?>
+</body>
+</html>
