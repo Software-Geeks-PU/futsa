@@ -11,13 +11,13 @@ body {
 
 .form-container {
   width: 400 px;
-  margin: 100px auto;
+  margin: 100px 50px;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .inside-form-container {
-  z-index: 1;
   background: #fff;
   opacity: 90%;
   max-width: 360px;
@@ -48,11 +48,11 @@ input:focus {
   border-radius: 6px;
 }
 
-a {
+.forget-create a {
   text-decoration: none;
   color: green;
 }
-a:hover {
+.forget-create a:hover {
   text-decoration: underline;
   color: green;
 }
@@ -64,4 +64,17 @@ a:hover {
 .images-logo p {
   font-size: 20px;
   font-weight: 500;
+}
+
+.logo-message {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .form-container {
+    flex-direction: column;
+    justify-content: center;
+  }
 }

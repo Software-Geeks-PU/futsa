@@ -6,7 +6,6 @@
 </head>
 
 <body>
-
     <div class="form-container">
         <div class="logo-message">
             <div class="images-logo">
@@ -20,7 +19,7 @@
                 <input type="password" name="password" placeholder="Password" required />
                 <input type='submit' name='submit' class="button-success" />
 
-                <div>
+                <div class='forget-create'>
                     <a href="../register/registerUser/userRegisterView.php"><i>Create your account </i></a><br />
                     <a href="#"><i>Forgot Password ?</i></a>
                 </div>
