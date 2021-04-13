@@ -16,8 +16,8 @@
            <input type="text" name="phonenum" placeholder="Phone Number" required/><br />
            <input class="button-success" type= "submit" name ="register"><br/> <br/><br/><hr/>
           <br/> 
-          <a href="#"><i>Already Have an Account?</i></a><br />
-          <a href="#"><i>Forgotten Password?</i></a>
+          <a href="#"><i>Already Have an Account ?</i></a><br />
+          <a href="#"><i>Forgotten Password ?</i></a>
         </div>
    </form>
    </div>
