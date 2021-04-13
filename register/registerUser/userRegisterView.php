@@ -32,7 +32,6 @@
    
     <div class="refrence"><a href="../../login/userLoginView.php"> Already Registred ?</a></div>
     
-     
     </form>
 
 </body>
