@@ -1,6 +1,6 @@
 <footer>
-        <div class='footer'> <i>This is SOme footer Make it gooter @ copyright</i> </div>
-    </footer>
+        <div class='footer'> <i>Copyright © 2021 FUTSA. All Rights Reserved.</i> </div>
+</footer>
 
 </body>
 
