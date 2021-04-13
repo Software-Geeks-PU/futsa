@@ -1,38 +1,47 @@
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is a register page of user</title>
-</head>
-<body>
-    <form method="POST" action="userRegisterBack.php">
-    <div class="fullname">
-    <label >Fullname</label>
-     <input type="text" name='fullname' placeholder="Enter Your Fullname" />
-    </div>
-    <div class="email">
-     <label >Email</label>
-     <input type="email" name='email' placeholder="Enter Your email id" />
-    </div>
-     <div class="password">
-    <label>Password</label>
-    <input type="password" name='password' placeholder="Enter Your password" /> 
-    </div>
-    <div>
-        <label>Address:</label>
-        <input type="text" name='address' placeholder="Enter Your address" />
-    </div>
-     
-     
-     <div class="phonenum">
-         <label>Phone Number</label>
-            `<input type="text" name='phonenum' placeholder="Enter Your phonenum" />
-     </div>
-   
-    <div class="refrence"><a href="../../login/userLoginView.php"> Already Registred ?</a></div>
-    
-    </form>
+<link type="text/css" href="../../src/css/userRegister.css" rel="stylesheet" >
+<link type="text/css" href="../../src/css/ui.css" rel="stylesheet" >
 
+</head>
+
+<body>
+   
+<div class="form-container">
+   <div class="inside-form-container">
+   <form action="">
+        <div class="header"><h2>Registration</h2></div><br>
+      
+        <div class= "">
+          
+           <input type="Text" class="input" name="UserName" placeholder="UserName" required/>  
+        </div>
+
+        <br />
+
+        <div class= "">
+        <input type="password" class="input" name="Password" placeholder="Password" required/>
+        </div>
+         <br />
+
+         <div class= "">
+        <input type="password" class="input" name="text" placeholder="Phone Number" required/>
+        </div>
+         <br />
+
+         <div class= "">
+        <input type="password" class="input" name="text" placeholder="Address" required/>
+        </div>
+         <br />
+
+        <div class="button-success loginButton">CLick Me</div>
+            <br/>
+        <div>
+          <a href="#"><i>Already Have an Account?</i></a><br />
+          <a href="#"><i>forgot Password</i></a>
+        </div>
+   </form>
+   </div>
+</div>
 </body>
 </html>
