@@ -14,12 +14,12 @@
       
         <div class= "">
           
-           <input type="Text" class="input" name="UserName" placeholder="UserName" required/>  
+           <input type="Text" class="input" name="email" placeholder="Email" required/>  
         </div>
         <br />
         <div class= "">
           
-           <input type="password" class="input" name="Password" placeholder="Password" required/>
+           <input type="password" class="input" name="password" placeholder="Password" required/>
         </div>
          <br />
         <div class="button-success loginButton">CLick Me</div>
