@@ -1,4 +1,3 @@
-
 <?php
     $fullname = $_POST['fullName'];
     $email  = $_POST['email'];
@@ -11,7 +10,7 @@
         $query = "INSERT INTO users Values ( '', '$fullname' , '$email' , '$password' ,  '$address' , '$phonenumber')";
         $result = mysqli_query($conn , $query);
         if($result){
-            header('Location:../../index.php');
+            header('Location:../../login/userLoginView.php');
         }
     }
 ?>
