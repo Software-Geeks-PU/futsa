@@ -13,7 +13,7 @@
 
 .button-success {
   color: white;
-  background-color: rgb(122, 190, 122);
+  background-color: rgb(35, 112, 35);
   text-align: center;
   padding: 10px;
   border-radius: 5px;
@@ -26,7 +26,7 @@
 .button-danger {
   width: 70px;
   color: white;
-  background-color: rgb(209, 97, 112);
+  background-color: rgb(128, 73, 80);
   text-align: center;
   padding: 10px;
   border-radius: 5px;
@@ -39,7 +39,7 @@
 .button-primary {
   width: 70px;
   color: white;
-  background-color: rgb(116, 180, 231);
+  background-color: rgb(52, 90, 121);
   text-align: center;
   padding: 10px;
   border-radius: 5px;

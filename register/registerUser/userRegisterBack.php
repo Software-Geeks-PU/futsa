@@ -11,11 +11,7 @@
         $query = "INSERT INTO users Values ( '', '$fullname' , '$email' , '$password' ,  '$address' , '$phonenumber')";
         $result = mysqli_query($conn , $query);
         if($result){
-           
             header('Location:../../index.php');
         }
     }
-
-
-
 ?>

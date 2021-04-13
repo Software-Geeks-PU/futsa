@@ -1,15 +1,17 @@
-body{
+body {
   margin: 0;
   padding: 0;
-  background:url(../../images/Back1.jpg);
   background-repeat: no-repeat;
   background-size: 100vw;
 }
 
+.header h2 {
+  margin: 0px;
+}
+
 .form-container {
-  width:400 px;
-  padding: 8% 0 0;
-  margin: auto;
+  width: 400 px;
+  margin: 50px auto;
 }
 
 .inside-form-container {
@@ -24,30 +26,36 @@ body{
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-input{  
+input {
+  margin: 10px 4px;
   background: #fff;
   width: 100%;
   height: 50px;
-  padding: 5px;
+  padding: 8px;
   border: 1px solid #b3b3b3;
-  font-size: 14px;  
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
 }
-input:hover{
+input:hover {
   border: 2px solid green;
-  border-radius: 4px;
+  border-radius: 6px;
 }
-a{
+
+input:focus {
+  border: 2px solid rgb(12, 126, 12);
+  border-radius: 6px;
+}
+
+a {
   text-decoration: none;
-  color: blue;
+  color: green;
 }
-a:hover{
+a:hover {
   text-decoration: underline;
-  color: blue;
+  color: green;
 }
 
-.email {
-}
-
-.password {
+.images-logo img {
+  height: 100px;
 }
