@@ -18,7 +18,7 @@ $row = mysqli_num_rows($result);
             //session is created to transfer user data between pages.
          $_SESSION['admin_uname']=$admin_uname;
          $_session['success']='You are now logged in';
-         header('Location: ../../afterlogin.php');
+         header('Location: ../../adminAfterLogin.php');
         }
     else{
         echo'<script>alert("Email password not found")</script>';

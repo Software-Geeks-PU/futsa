@@ -2,7 +2,7 @@
 
 <head>
     <link type="text/css" href="../src/css/ui.css" rel="stylesheet">
-    <link rel="stylesheet" href="userLogin.css" type="text/css">
+    <link rel="stylesheet" href="../userLogin.css" type="text/css">
 </head>
 
 <body>
