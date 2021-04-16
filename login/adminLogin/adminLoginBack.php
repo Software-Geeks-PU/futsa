@@ -2,27 +2,26 @@
 session_start(); 
 if(isset($_POST['submit']))
 { 
-$email=$_POST['email'];
+$admin_uname=$_POST['admin_uname'];
 $password=$_POST['password'];
 $password=md5($password);
 }
 //importing connection file.
-include '../database/db.php';
-
+include '../../database/db.php';
 //query to check if  email and pw match.
-$query = "SELECT * FROM users WHERE email='$email' and password = '$password'";
+$query = "SELECT * FROM admin WHERE admin_uname='$admin_uname' and password = '$password'";
 $result = mysqli_query($conn,$query);
 $row = mysqli_num_rows($result);
    
    if ($row == 1) 
         {
             //session is created to transfer user data between pages.
-         $_SESSION['email']=$email;
+         $_SESSION['admin_uname']=$admin_uname;
          $_session['success']='You are now logged in';
-         header('Location: ../afterlogin.php');
+         header('Location: ../../afterlogin.php');
         }
     else{
         echo'<script>alert("Email password not found")</script>';
-        header('location: ../register/registerUser/userRegisterView.php');   
+        header('location: ../../register/registerUser/userRegisterView.php');   
     }
 ?>
