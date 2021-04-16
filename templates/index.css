@@ -60,7 +60,6 @@
   height: 100px;
 }
 .footer {
- 
   padding-top: 30px;
   color: blanchedalmond;
   text-align: center;
@@ -69,4 +68,15 @@
   background-color: brown;
   width: 100%;
   height: 45px;
+}
+
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
 }
