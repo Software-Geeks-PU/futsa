@@ -10,14 +10,16 @@ $password=md5($password);
 include '../database/db.php';
 
 //query to get email and pw.
-$query = "SELECT * FROM users WHERE email='$email' and password = '$password'";
+$query = "SELECT * FROM users WHERE email='$email' AND password = '$password'";
 $result = mysqli_query($conn,$query);
 $row = mysqli_num_rows($result);
    
    if ($row == true) 
         {
          $_SESSION['user_email']=$email;
-         header('Location: ../index.php');
+         echo('Logged In Succesfully :D');
+         header('Location: ../book.php');
+        
         }
     else{
         echo("Email password not found");
