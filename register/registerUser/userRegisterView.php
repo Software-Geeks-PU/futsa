@@ -9,6 +9,7 @@
     <div class="form-container">
         <div class="inside-form-container">
             <form action="userRegisterBack.php" method="POST">
+                <!-- <?php //include("../../error.php"); ?>  -->
                 <div class='images-logo'><a href="../../index.php"><img src="../../src/images/logo.png" /></a> </div>
                 <div class="header">
                     <h2>Create your account</h2>
