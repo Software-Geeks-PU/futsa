@@ -10,7 +10,7 @@
         <div class="logo-message">
             <div class="images-logo">
                 <a href="../index.php"><img src='../src/images/logo.png' /></a>
-                <p>Connect with futsal and footballers</br> around you on Futsa.</p>
+                <p>Connect with futsals and footballers</br> around you on Futsa.</p>
             </div>
         </div>
         <div class="inside-form-container">
