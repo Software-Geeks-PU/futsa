@@ -1,4 +1,11 @@
 <?php
+session_start();
+$errors = array();
+
+//if register button is clicked
+if(isset($_POST['register'])){
+
+    //getting data from input of form and inserting into variable
     $fullname = $_POST['fullName'];
     $email  = $_POST['email'];
     $password = md5($_POST['password']);
@@ -6,11 +13,24 @@
     $phonenumber = $_POST['phonenum'];
     require '../../database/db.php';
 
-    if($conn){
+    //checking if email already exists
+     $user_check_query = "SELECT * FROM users WHERE email='$email' LIMIT 1";
+     $result = mysqli_query($conn, $user_check_query);
+     $user = mysqli_fetch_assoc($result);
+     
+     //if user doesn't exists
+     if(!$user){
         $query = "INSERT INTO users Values ( '', '$fullname' , '$email' , '$password' ,  '$address' , '$phonenumber')";
         $result = mysqli_query($conn , $query);
         if($result){
-            header('Location:../../login/userLoginView.php');
+            $_SESSION['email'] = $email;
+            $_SESSION['success'] = 'Your account is created.';
+            header('Location: ../../afterlogin.php');
         }
-    }
+     } else {
+         array_push($errors , "Email already exists");
+         echo('Email already exists');
+     }
+
+}
 ?>

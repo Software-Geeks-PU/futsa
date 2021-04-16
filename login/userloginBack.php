@@ -9,18 +9,20 @@ $password=md5($password);
 //importing connection file.
 include '../database/db.php';
 
-//query to get email and pw.
+//query to check if  email and pw match.
 $query = "SELECT * FROM users WHERE email='$email' and password = '$password'";
 $result = mysqli_query($conn,$query);
 $row = mysqli_num_rows($result);
    
-   if ($row == true) 
+   if ($row == 1) 
         {
-         $_SESSION['user_email']=$email;
-         header('Location: ../index.php');
+            //session is created to transer user data between pages.
+         $_SESSION['email']=$email;
+         $_session['success']='You are now logged in';
+         header('Location: ../afterlogin.php');
         }
     else{
-        echo("Email password not found");
-        //header('Location: ../register/registerUser/userRegisterView.php');
+        echo'<script>alert("Email password not found")</script>';
+        header('location: ../register/registerUser/userRegisterView.php');   
     }
 ?>
