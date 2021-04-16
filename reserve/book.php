@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 error_reporting(0);
 include '../database/db.php';
 $result = mysqli_query($conn,"SELECT time FROM book WHERE time='6:00-7:00'");
