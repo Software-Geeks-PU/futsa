@@ -21,12 +21,16 @@
             <div class="left-header">
 
                 <a href="login/userLogin/userLoginView.php">
-                    <div class="button-primary">Login</div>
+                    <div class="button-success">Login as User</div>
                 </a>
                 <a href="register/registerUser/userRegisterView.php">
-                    <div class="button-danger">Register</div>
+                    <div class="button-success">Register as User</div>
 
-                </a>
+                    <a href="login/adminLogin/adminLoginView.php">
+                        <div class="button-success">Login as Admin</div>
+                        <a href="register/RegisterAdmin/adminRegisterView.php">
+                            <div class="button-success">Register as Admin</div>
+                        </a>
             </div>
         </div>
     </header>

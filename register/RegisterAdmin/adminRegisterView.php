@@ -19,7 +19,7 @@
                 <hr />
                 <input class="button-success" type="submit" name="register"><br /> <br /><br />
                 <br />
-                <a href="../../login/userLoginView.php"><i>Already Have an Account ?</i></a><br />
+                <a href="../../login/adminLogin/adminLoginView.php"><i>Already Have an Account ?</i></a><br />
                 <a href="#"><i>Forgotten Password ?</i></a>
         </div>
         </form>

@@ -15,7 +15,7 @@
         if($result){
             $_SESSION['email'] = $email;
             $_SESSION['success'] = 'Your account is created.';
-            header('Location: ../../afterlogin.php');
+            header('Location: ../../adminAfterLogin.php');
         }
     }
     //if user already exists
