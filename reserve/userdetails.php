@@ -1,11 +1,11 @@
 <?php
-include 'database/db.php';
 $userEmail=$_SESSION['email'];
 
 if (!$userEmail)
 {
  header('location:./login/userLogin/userLogin.php');
 }
+include "database/db.php";
 $result = mysqli_query($conn,"SELECT * FROM users WHERE email='$userEmail' ");
 $data=mysqli_fetch_assoc($result);
 $u_id= $data['id'];
