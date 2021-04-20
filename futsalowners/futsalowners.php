@@ -9,11 +9,9 @@
     <link rel='stylesheet' type='text/css' href='templates/index.css' />
     <title>Welcome to FUTSA</title>
 </head>
-
 <body>
     <div class="body-lists">
         <?php 
-        include "database/db.php";
         $selectQuery = "SELECT * from futsaladmin  ";
         $query = mysqli_query($conn , $selectQuery);
         $nums = mysqli_num_rows($query);
