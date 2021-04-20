@@ -25,7 +25,7 @@
                 <h4><b><?php echo $res['futsalname']; ?></b></h4>
                 <p>Address : <?php echo $res['address']; ?></p>
                 <p>Phonenumber : <?php echo $res['phonenum']; ?></p>
-                <button class="button-success">Book Now</button>
+                <a href="afterlogin.php"><button class="button-success">Book Now</button></a>
             </div>
         </div>
         <?php
