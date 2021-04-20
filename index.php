@@ -12,6 +12,7 @@
         <h3>random text</h3>
     </div>
 </section>
+<?php include 'database/db.php'; ?>
 <?php include 'futsalowners/futsalowners.php'; ?>
 <section class="second-section">
     <div class="images"><img src="" /></div>
