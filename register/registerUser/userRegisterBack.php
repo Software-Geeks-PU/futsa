@@ -28,7 +28,7 @@ if(isset($_POST['register'])){
             header('Location: ../../afterlogin.php');
         }
      } else {
-         array_push($errors , "Email already exists");
+         
          echo('Email already exists');
      }
 

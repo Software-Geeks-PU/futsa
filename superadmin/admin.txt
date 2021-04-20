@@ -1,1 +1,0 @@
-This folder is for the admin who administor the main admin panel.
