@@ -24,7 +24,6 @@
 }
 
 .button-danger {
-  width: 70px;
   color: white;
   background-color: rgb(128, 73, 80);
   text-align: center;
@@ -37,7 +36,6 @@
 }
 
 .button-primary {
-  width: 70px;
   color: white;
   background-color: rgb(52, 90, 121);
   text-align: center;
