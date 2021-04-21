@@ -3,7 +3,7 @@ $userEmail=$_SESSION['email'];
 
 if (!$userEmail)
 {
- header('location:./login/userLogin/userLogin.php');
+ header('location:../login/userLogin/userLogin.php');
 }
 include "database/db.php";
 $result = mysqli_query($conn,"SELECT * FROM users WHERE email='$userEmail' ");
