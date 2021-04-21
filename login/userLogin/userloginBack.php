@@ -16,8 +16,8 @@ $row = mysqli_num_rows($result);
    if ($row == 1) 
         {
             //session is created to transfer user data between pages.
-         $_SESSION['email']=$email;
-         $_session['success']='You are now logged in';
+         $_SESSION['email'] = $email;
+         $_session['success'] = 'You are now logged in';
          header('location: ../../afterlogin.php');
         }
     else{

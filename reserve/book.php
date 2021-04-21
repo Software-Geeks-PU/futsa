@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include 'book_db.php'; ?>
+<?php if (isset($_GET['logout']))
+{
+session_destroy();
+unset($_SESSION['email']);
+header("location: login/userLogin/userLoginView.php");
+}
+?>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="reserve/book.css">
     <script>
     function display() {
         return confirm("Are u sure u want to book the game");
-        header('location: ../afterlogin.php');
+        header('location: afterlogin.php');
     }
     </script>
     <link rel="shortcut icon" type="image/png" href="./images/fav.png" />
@@ -22,15 +29,15 @@
     <header>
         <div class="header_box">
             <div class="logo">
-                <h1><span class="hightlight">FUT</span>SA</h1>
-               
+                <img src="src/images/logo.png" alt="futsa" />
+                <h1><span class=" hightlight">FUT</span>SA</h1>
             </div>
             <ul>
-                <!-- <li class="reserve"><span style="cursor:pointer;" onclick="openNav()"> My Reservations</span>
-                        </li> -->
-                <!-- </li> -->
-                <h3>Hello This is :<?php  echo $_SESSION['email'];  ?></h3>
-                <li><a href="index.php">LogOut</a></li>
+            <h1><span class="hightlight">FUT</span>SA</h1>
+                <form method="get" action="afterLogin.php">
+                    <button name='logout'>Logout</button>
+                </form>
+
             </ul>
             </nav>
         </div>
