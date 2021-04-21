@@ -23,11 +23,13 @@
         <div class="header_box">
             <div class="logo">
                 <h1><span class="hightlight">FUT</span>SA</h1>
+               
             </div>
             <ul>
                 <!-- <li class="reserve"><span style="cursor:pointer;" onclick="openNav()"> My Reservations</span>
                         </li> -->
                 <!-- </li> -->
+                <h3>Hello This is :<?php  echo $_SESSION['email'];  ?></h3>
                 <li><a href="index.php">LogOut</a></li>
             </ul>
             </nav>

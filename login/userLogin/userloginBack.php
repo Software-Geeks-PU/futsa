@@ -23,7 +23,7 @@ $row = mysqli_num_rows($result);
     else{
         echo'<script>alert("Email password not found")</script>';
         header('location: ../../register/registerUser/userRegisterView.php'); 
-}
+    }
   
     }
 ?>
