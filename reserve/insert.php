@@ -3,6 +3,7 @@
             {
             include "userdetails.php"; 
             include "../database/db.php";
+            
             $time= $_POST['bookingTime'];
             $check_query = "SELECT * from booktable WHERE time = '$time' LIMIT 1 ";
             $res = mysqli_query($conn, $check_query);

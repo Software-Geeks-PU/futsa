@@ -33,7 +33,7 @@ header("location: login/userLogin/userLoginView.php");
                 <h1><span class=" hightlight">FUT</span>SA</h1>
             </div>
             <ul>
-            <h1><span class="hightlight">FUT</span>SA</h1>
+                <h3>Welcome <?php echo $_SESSION['email'] ?></h3>
                 <form method="get" action="afterLogin.php">
                     <button name='logout'>Logout</button>
                 </form>
