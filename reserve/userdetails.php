@@ -9,6 +9,7 @@ if (!$userEmail)
 include "../database/db.php";
 $result = mysqli_query($conn,"SELECT * FROM users WHERE email='$userEmail' ");
 $data=mysqli_fetch_assoc($result);
+
 $u_id= $data['id'];
 $u_name= $data['fullname'];
 $u_pass= $data['password'];

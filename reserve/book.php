@@ -6,7 +6,8 @@
 session_destroy();
 unset($_SESSION['email']);
 header("location: login/userLogin/userLoginView.php");
-}?>
+}
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -32,6 +33,7 @@ header("location: login/userLogin/userLoginView.php");
                 <h1><span class=" hightlight">FUT</span>SA</h1>
             </div>
             <ul>
+                <h3>Welcome <?php echo $_SESSION['email'] ?></h3>
                 <form method="get" action="afterLogin.php">
                     <button name='logout'>Logout</button>
                 </form>
