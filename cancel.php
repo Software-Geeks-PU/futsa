@@ -1,6 +1,7 @@
 <?php 
 
     include 'database/db.php';
+    error_reporting(0);
     $time = $_GET['Ctime'];
     $delete = "DELETE FROM booktable WHERE time='$time'";
     $result = mysqli_query($conn,$delete);
