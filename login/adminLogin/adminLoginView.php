@@ -20,7 +20,7 @@
                 <input type='submit' name='submit' class="button-success" />
 
                 <div class='forget-create'>
-                    <a href="../register/registerUser/userRegisterView.php"><i>Register Admin ?</i></a><br />
+                    <a href="../../register/RegisterAdmin/adminRegisterView.php"><i>Register Admin ?</i></a><br />
                     <a href="#"><i>Forgot Password ?</i></a>
                 </div>
             </form>
