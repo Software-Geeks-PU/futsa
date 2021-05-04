@@ -19,7 +19,8 @@
             header('location:../afterlogin.php');
             }
             }else{
-            echo(" Can't book because already booked");
+            echo '<script>alert("Cant Booked");</script>';
+            header('location:../afterlogin.php');
             }
             }       
 ?>
