@@ -19,21 +19,17 @@
     <header>
         <div class="nav-bar">
             <div class="logo">
-                <h2>FUTSA</h2>
+                <p>
+                    <span class="t-logo">FUTSA</span>
+                </p>
             </div>
             <div class="left-header">
-
-                <a href="login/userLogin/userLoginView.php">
-                    <div class="button-success">Login as User</div>
+                <a href="login/userLogin/userLoginView.php">Login</a>
                 </a>
-                <a href="register/registerUser/userRegisterView.php">
-                    <div class="button-success">Register as User</div>
+                <a href="register/registerUser/userRegisterView.php">Register</a>
 
-                    <a href="login/adminLogin/adminLoginView.php">
-                        <div class="button-success">Login as Admin</div>
-                        <a href="register/RegisterAdmin/adminRegisterView.php">
-                            <div class="button-success">Register as Admin</div>
-                        </a>
+
+                <a href="login/adminLogin/adminLoginView.php">Admin</a>
             </div>
         </div>
     </header>
