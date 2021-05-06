@@ -6,77 +6,126 @@
 
 .nav-bar {
   padding: 10px 50px;
-  background-color: aqua;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .left-header {
   display: flex;
   justify-content: space-around;
-  margin: 0px 50px;
+  align-items: center;
 }
 .left-header a {
   padding: 10px;
   text-decoration: none;
+  margin-left: 20px;
+  color: #0f2137;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  box-shadow: black 2px;
 }
 
+.left-header a:hover {
+  opacity: 0.8;
+  color: rgb(17, 107, 17);
+}
 .first-section {
-  background-color: darkgoldenrod;
-  height: 400px;
   display: flex;
   flex-flow: column;
-  justify-content: top;
+  justify-content: center;
   align-items: center;
-  color: white;
-  border-width: 10px 0;
-  border-style: solid;
-  border-color: black;
 }
-
-.first-section h2 {
+.first-section img {
+  width: 975px;
+  height: 570px;
   position: relative;
-  top: 70px;
-}
-#w {
-  position: relative;
-  top: 100px;
-}
-.second-section {
-  display: flex;
-  height: 200px;
-  background-color: chocolate;
-  border: black;
-  border-width: 4px;
-  border-style: solid;
-  padding: 50px;
 }
 
-.images {
+.logo {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
-.images img {
-  height: 100px;
+.logo img {
+  height: 50px;
 }
-.footer {
-  padding-top: 30px;
-  color: blanchedalmond;
+
+.logo span {
+  color: #0f2137;
+  font-size: 30px;
+  font-weight: 700;
+  font-size: 0 40%;
+}
+
+/* texts and objects */
+
+.text-firstsection h3 {
+  margin-top: 30px;
+  font-size: 48px;
+  color: #343d48;
+  letter-spacing: -1px;
   text-align: center;
-  border-style: solid;
-  border-color: black;
-  background-color: brown;
-  width: 100%;
-  height: 45px;
 }
 
-.error {
-  width: 92%;
-  margin: 0px auto;
+.text-firstsection p {
+  color: #0f2137;
+  font-size: 25px;
+  text-align: center;
+  margin: 15px 0;
+}
+.get-start-btn {
+  margin: 10px 0 0 0;
+  color: white;
+  width: 150px;
+  background-color: #0a8049;
+  font-size: 22px;
+  padding: 0 30px;
+  text-align: center;
   padding: 10px;
-  border: 1px solid #a94442;
-  color: #a94442;
-  background: #f2dede;
   border-radius: 5px;
-  text-align: left;
+}
+
+.get-start-btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.second-section {
+  margin: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.secondary-title h1 {
+  color: #343d48;
+  line-height: 53.28px;
+  letter-spacing: -1px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.secondary-title p {
+  color: #0f2137;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px;
+}
+
+.green-line-h {
+  background-color: #0a8049;
+  height: 7px;
+  width: 80px;
+  border-radius: 20px;
+}
+
+.location-icon img {
+  height: 90px;
+}
+
+.futsal-lists {
+  margin: 10px;
+  width: 100%;
 }

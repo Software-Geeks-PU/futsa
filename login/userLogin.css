@@ -1,8 +1,8 @@
 body {
   margin: auto;
   padding: 0;
-  background-repeat: no-repeat;
   background-size: 100vw;
+  font-family: "Poppins", sans-serif;
 }
 
 .header h2 {

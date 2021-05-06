@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' href='futsalowner.css' />
-    <link rel='stylesheet' type='text/css' href='../src/css/ui.css' />
-    <link rel='stylesheet' type='text/css' href='../templates/index.css' />
     <title>Welcome to FUTSA</title>
 </head>
 
 <body>
+    .
     <div class="body-lists">
         <?php 
         include 'database/db.php';
@@ -21,16 +19,30 @@
         ?>
         <div class="card">
             <img src=<?php echo $res['image']; ?> alt=" Avatar" style="width:100%">
-            <div class="container">
-                <h4><?php echo $res['futsalname']; ?></h4>
-                <p>Address : <?php echo $res['address']; ?></p>
-                <p>Phonenumber : <?php echo $res['phonenum']; ?></p>
-                <a href="afterlogin.php"><button class="button-success">Book Now</button></a>
+            <hr>
+
+            <div class="card-container">
+                <h2><?php echo $res['futsalname']; ?></h2>
+                <div class="loc">
+                    <img src="images/location.png" alt="A">
+                    <p><?php echo $res['address']; ?></p>
+                </div>
+                <div class="loc">
+                    <img src="images/phicon.png" alt="A">
+                    <p><?php echo $res['phonenum']; ?></p>
+                </div>
+                <div class="btn-lists">
+                    <a href="afterlogin.php">
+                        <div class="book-btn">Book Now</div>
+                    </a>
+                    <div class="book-btn call-now">Call Now</div>
+                </div>
+
             </div>
         </div>
         <?php
-    }
-    ?>
+                    }
+                    ?>
     </div>
 </body>
 
