@@ -26,8 +26,6 @@
                 <a href="login/userLogin/userLoginView.php">Login</a>
                 </a>
                 <a href="register/registerUser/userRegisterView.php">Register</a>
-
-
                 <a href="login/adminLogin/adminLoginView.php">Admin</a>
             </div>
         </div>

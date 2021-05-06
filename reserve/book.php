@@ -14,6 +14,7 @@ header("location: login/userLogin/userLoginView.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="reserve/book.css">
+    <link rel="stylesheet" href="templates/index.css">
     <script>
     function display() {
         return confirm("Are u sure u want to book the game");
@@ -26,36 +27,37 @@ header("location: login/userLogin/userLoginView.php");
 
 <body>
     <header>
-        <nav>
-            <div class="header-box">
-                <div class="logo">
-                    <img src="src/images/logo.png" alt="futsa" />
-                    <h1>FUT<span class="highlight">SA</span></h1>
-                </div>
-
-
-                <h3>Welcome <?php echo $_SESSION['email'] ?></h3>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src='src/images/logo.png' />
+                <a href="index.php">
+                    <p><span class="t-logo">FUTSA</span></p>
+                </a>
+            </div>
+            <div class="left-header">
                 <form method="get" action="afterLogin.php">
                     <button class="available" name='logout'>Logout</button>
                 </form>
-
-
+                <button class="available" name='logout'>Your Bookings</button>
             </div>
-        </nav>
+        </div>
     </header>
 
     <section>
+        <div class="first-section-user">
+            <div class="user-name">
+                <img src="images/admin.png" alt="A">
+                <h1>Welcome <?php echo $_SESSION['email'] ?></h1>
+                <p>Please select the available time below to book.<br></p>
+            </div>
+        </div>
+
+    </section>
+    <section>
         <div class="booking-table">
-            <h1 class="available-heading">
-                <span>Available Time</span>
-                <div class="hdesign-green"></div>
-            </h1>
+            <!-- This is the place for title -->
             <div class="availabletime">
                 <div class="booking-cards">
-                    <!-- <tr class="table-heading">
-                        <th>Time</th>
-                        <th class="status">Status</th>
-                    </tr> -->
                     <div class="card">
                         <div class="time <?php if ($status1 == "Booked") echo ' available2';?>" align="center">
                             <h2>6:00 -7:00 AM</h2>

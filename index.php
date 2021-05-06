@@ -11,11 +11,19 @@
             <h3>Play with your heart not just <br>with feets.</h3>
             <p>A futsal booking system</p>
         </div>
-        <div class="get-start-btn">Get Started</div>
-        <img src="images/img.png" />
+        <div class="logo-first-section">
+            <img src="src/images/logo.png" />
+        </div>
+
+        <a href="afterlogin.php">
+            <div class="get-start-btn">Get Started</div>
+        </a>
+        <div class="first-section-big">
+            <a href="login/userLogin/userLoginView.php"> <img src="images/img.png" /></a>
+        </div>
+
     </div>
 </section>
-<hr>
 <section>
     <div class="second-section">
         <div class="location-icon"><img src="images/location.png" alt="icon"></div>
