@@ -14,30 +14,46 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 10px 60%;
 }
 .left-header a {
   padding: 10px;
   text-decoration: none;
   margin-left: 20px;
-  color: green;
-  font-size: 20px;
+  color: #0f2137;
+  font-size: 18px;
   font-weight: 700;
+  line-height: 24px;
   box-shadow: black 2px;
 }
 
 .left-header a:hover {
   opacity: 0.8;
+  color: rgb(17, 107, 17);
+}
+.first-section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.first-section img {
+  width: 975px;
+  height: 570px;
+  position: relative;
 }
 
-.first-section img {
-  width: 880px;
-  height: 600px;
-  margin: 0 15%;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
 }
 
 .logo span {
-  color: black;
+  color: #0f2137;
   font-size: 30px;
   font-weight: 700;
   font-size: 0 40%;
@@ -45,18 +61,71 @@
 
 /* texts and objects */
 
-.secondary-title {
-  margin: 10px 40% 20px;
-  color: black;
-  font-size: 30px;
-  font-weight: 600;
-  text-decoration: none;
+.text-firstsection h3 {
+  margin-top: 30px;
+  font-size: 48px;
+  color: #343d48;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.text-firstsection p {
+  color: #0f2137;
+  font-size: 25px;
+  text-align: center;
+  margin: 15px 0;
+}
+.get-start-btn {
+  margin: 10px 0 0 0;
+  color: white;
+  width: 150px;
+  background-color: #0a8049;
+  font-size: 22px;
+  padding: 0 30px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.get-start-btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.second-section {
+  margin: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.secondary-title h1 {
+  color: #343d48;
+  line-height: 53.28px;
+  letter-spacing: -1px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.secondary-title p {
+  color: #0f2137;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px;
 }
 
 .green-line-h {
-  background-color: green;
+  background-color: #0a8049;
   height: 7px;
   width: 80px;
   border-radius: 20px;
-  margin: 10px 30% 0;
+}
+
+.location-icon img {
+  height: 90px;
+}
+
+.futsal-lists {
+  margin: 10px;
+  width: 100%;
 }

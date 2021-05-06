@@ -19,9 +19,8 @@
     <header>
         <div class="nav-bar">
             <div class="logo">
-                <p>
-                    <span class="t-logo">FUTSA</span>
-                </p>
+                <img src='src/images/logo.png' />
+                <p><span class="t-logo">FUTSA</span></p>
             </div>
             <div class="left-header">
                 <a href="login/userLogin/userLoginView.php">Login</a>
