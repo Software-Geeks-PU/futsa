@@ -1,7 +1,3 @@
-* {
-  font-family: "Open Sans", sans-serif;
-}
-
 .buttons-container {
   display: flex;
   margin: 10px;
@@ -13,14 +9,14 @@
 
 .button-success {
   color: white;
-  background-color: rgb(35, 112, 35);
+  background-color: #0a8049;
   text-align: center;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .button-success:hover {
-  background-color: green;
+  background-color: #0a8049;
 }
 
 .button-danger {

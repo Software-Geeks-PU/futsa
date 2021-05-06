@@ -1,7 +1,6 @@
 body {
   margin: auto;
   padding: 0;
-  background-size: 100vw;
   font-family: "Poppins", sans-serif;
 }
 
@@ -40,22 +39,22 @@ input,
   outline: none;
 }
 input:hover {
-  border: 2px solid green;
+  border: 2px solid #0a8049;
   border-radius: 6px;
 }
 
 input:focus {
-  border: 2px solid rgb(12, 126, 12);
+  border: 2px solid #0a8049;
   border-radius: 6px;
 }
 
 .forget-create a {
   text-decoration: none;
-  color: green;
+  color: #0a8049;
 }
 .forget-create a:hover {
   text-decoration: underline;
-  color: green;
+  color: #0a8049;
 }
 
 .images-logo img {
