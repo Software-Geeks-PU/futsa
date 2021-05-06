@@ -1,40 +1,44 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .body-lists {
-  margin: auto;
-  width: 95%;
+  width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: transform 0.5s ease;
-  width: 250px;
+  width: 400px;
   text-align: center;
-  margin: 20px;
-  flex-grow: 4;
+  margin: 30px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 #265329;
   transform: scale(1.1);
 }
 
 .card img {
   width: 200px;
   height: 200px;
+  border-radius: 15px 15px 0 0;
 }
 
 .card-container {
-  padding: 2px 16px;
+  padding: 30px;
   text-align: left;
   padding: 10px;
+  display: flex;
+  align-items: left;
+  flex-flow: column;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 800px) {
@@ -46,4 +50,42 @@
 /* text decoration */
 
 .card-container p {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.loc img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.loc {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.book-btn {
+  width: 100px;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #0a8080;
+  cursor: pointer;
+}
+
+.call-now {
+  background-color: rgb(216, 167, 76);
+  width: 90px;
+}
+
+.btn-lists {
+  display: flex;
 }
