@@ -1,4 +1,8 @@
 <?php 
+   session_start();
+?>
+
+<?php 
     $admin_uname = $_POST['admin_uname'];
     $password =md5($_POST['password']);
     require '../../database/db.php';
@@ -13,9 +17,10 @@
         $query = "INSERT INTO admin Values ( '', '$admin_uname' , '$password')";
         $result = mysqli_query($conn , $query);
         if($result){
-            $_SESSION['email'] = $email;
             $_SESSION['success'] = 'Your account is created.';
-            header('Location: ../../adminAfterLogin.php');
+            $_SESSION['admin_uname'] =$admin_uname ;
+            header('Location: ../../adminPanel/adminAfterLogin.php');
+            
         }
     }
     //if user already exists

@@ -16,7 +16,7 @@
                 </div><br>
                 <input type="Text" name="admin_uname" placeholder="Username" required /> <br />
                 <input type="password" name="password" placeholder="Password" required /><br />
-                <hr />
+                
                 <input class="button-success" type="submit" name="register"><br /> <br /><br />
                 <br />
                 <a href="../../login/adminLogin/adminLoginView.php"><i>Already Have an Account ?</i></a><br />
