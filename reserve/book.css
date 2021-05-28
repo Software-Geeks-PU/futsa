@@ -83,7 +83,7 @@ body {
 } */
 
 .available {
-  min-width: 80px;
+  min-width: 80px; 
   min-height: 30px;
   color: white;
   background-color: #0a8049;
@@ -95,12 +95,21 @@ body {
 
 .available2 {
   color: white;
-  background-color: #660708;
+  background-color: yellowgreen;
   text-align: center;
   padding: 10px;
   border-radius: 15px;
   transform: none;
 }
+.booked {
+  color: white;
+  background-color: red;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  transform: none;
+}
+
 
 .available2:hover {
   transform: scale(1);
