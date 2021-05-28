@@ -44,7 +44,8 @@ header("location: ../index.php");
                <td class ='table-row'> ".$data['bookername']." </td>
                <td class ='table-row'> ".$data['time']."</td>
                <td class ='table-row'> <a class='button-danger' href='cancel.php?Ctime=$data[time]'>Cancel</a> </td>
-             </tr> "
+               <td class ='table-row'> <a class='button-primary' href='confirm.php?Ctime=$data[time]'>Confirm</a> </td>
+               </tr> "
              ?>
            <?php } ?>
          </table>

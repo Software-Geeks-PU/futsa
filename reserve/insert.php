@@ -10,7 +10,7 @@
             $check = mysqli_fetch_assoc($res);
             if(!$check)
             {
-            $first="INSERT INTO booktable (id, bookername, time) VALUES('','$u_name','$time')";
+            $first="INSERT INTO booktable (id, bookername, time,flag) VALUES('','$u_name','$time',1)";
             $result_1=mysqli_query($conn,$first);
             if($result_1){
             header('location:../afterlogin.php');
