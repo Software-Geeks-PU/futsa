@@ -1,3 +1,9 @@
+<?php
+session_start();
+include 'database/db.php';
+?>
+
+
 <link href="./src/css/ui.css" rel="stylesheet">
 <link rel='stylesheet' type='text/css' href='futsalowners/futsalowner.css' />
 <link rel='stylesheet' type='text/css' href='templates/index.css' />
