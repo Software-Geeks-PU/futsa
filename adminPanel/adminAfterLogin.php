@@ -6,7 +6,7 @@
    if(!isset($_SESSION['role']) or $_SESSION['role'] !='owner'){
     header('Location: /futsa/index.php');
   }
-   include '../database/db.php';
+  include '../database/db.php';
    $owner = $_SESSION['name'];
    $sql_booking = "select booking_id,date, status, futsal_name, book_time, username from futsal as f inner join booking as b on f.futsal_id = b.futsal_id inner join book_time as bt on b.book_time_id = bt.book_time_id inner join user as u on b.booker_id = u.id WHERE f.owner = '$owner'";
    $query = mysqli_query($conn, $sql_booking);
@@ -18,6 +18,10 @@
        <link rel='stylesheet' type='text/css' href='../src/css/ui.css' />
    </head>
    <body>
+<header>
+<?php include('C:\xampp\htdocs\futsa\templates\header.php');  ?>
+
+</header>
    <section>
         <div class="first-section-user">
             <div class="user-name">

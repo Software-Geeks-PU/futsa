@@ -5,6 +5,9 @@
 
    session_start();
    include '../database/db.php';
+   if(isset($_SESSION['role']) and $_SESSION['role']=='owner'){
+    header('Location: /futsa/adminPanel/adminAfterLogin.php');
+}
    $id = $_SESSION['id'];
    $sql_booking = "select futsal_name,date, book_time, status from booking as b inner join user as u on b.booker_id = u.id inner join book_time as bt on b.book_time_id = bt.book_time_id inner join futsal as f on b.futsal_id = f.futsal_id where u.id = '$id'";
    $query = mysqli_query($conn, $sql_booking);

@@ -1,18 +1,18 @@
 <?php if (isset($_POST['logout']))
 {
 session_destroy();
-header("location: login/userLogin/userLoginView.php");
+header("location: /futsa/login/userLogin/userLoginView.php");
 }
 ?>
 
 <html lang="en">
 
 <head>
-    <link href="../src/css/ui.css" rel="stylesheet">
+    <link href="/futsa/src/css/ui.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='templates/index.css' type=text/css rel="stylesheet" />
+    <link href='/futsa/templates/index.css' type=text/css rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -27,7 +27,7 @@ header("location: login/userLogin/userLoginView.php");
     <header>
         <div class="nav-bar">
             <div class="logo">
-                <img src='src/images/logo.png' />
+                <img src='/futsa/src/images/logo.png' />
                 <p><span class="t-logo">FUTSA</span></p>
             </div>
             <div class="left-header">
@@ -37,9 +37,9 @@ header("location: login/userLogin/userLoginView.php");
                     <button class="available" name='logout'>Logout</button>
                 </form>
                 <?php }else{ ?>
-                    <a href="login/userLogin/userLoginView.php">Login</a>
+                    <a href="/futsa/login/userLogin/userLoginView.php">Login</a>
                     </a>
-                    <a href="register/registerUser/userRegisterView.php">Register</a>
+                    <a href="/futsa/register/registerUser/userRegisterView.php">Register</a>
                 <?php } ?>
                 <?php if(isset($_SESSION['role'])  and $_SESSION['role']=='owner'){ ?>
                     <a href="/futsa/adminPanel/adminAfterLogin.php">Admin</a>

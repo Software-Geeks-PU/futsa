@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'book_query.php'; ?>
+<?php include 'book_query.php'; 
+if(isset($_SESSION['role']) and $_SESSION['role']=='owner'){
+    header('Location: /futsa/adminPanel/adminAfterLogin.php');
+}
+
+?>
 
 <head>
     <meta charset="UTF-8">

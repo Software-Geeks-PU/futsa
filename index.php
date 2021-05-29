@@ -1,6 +1,9 @@
 <?php
 session_start();
 include 'database/db.php';
+if(isset($_SESSION['role']) and $_SESSION['role']=='owner'){
+    header('Location: /futsa/adminPanel/adminAfterLogin.php');
+}
 ?>
 
 
