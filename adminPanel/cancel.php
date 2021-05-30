@@ -2,8 +2,8 @@
 
     include '../database/db.php';
     error_reporting(0);
-    $time = $_GET['Ctime'];
-    $delete = "DELETE FROM booktable WHERE time='$time'";
+    $booking_id = $_GET['booking_id'];
+    $delete = "DELETE FROM booking WHERE booking_id='$booking_id'";
     $result = mysqli_query($conn,$delete);
     
     if($result)

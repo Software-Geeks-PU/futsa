@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+if(isset($_SESSION['email'])){
+    header('Location: /futsa/index.php');
+}
+?>
+
 <html>
 
 <head>
@@ -23,6 +31,8 @@
                 <hr />
                 <br />
                 <a href="../../login/userLogin/userLoginView.php"><i>Already Have an Account ?</i></a><br />
+                <a href="../RegisterAdmin/adminRegisterView.php"><i>Register as Futsal Owner</i></a><br />
+
                 <a href="#"><i>Forgotten Password ?</i></a>
         </div>
         </form>

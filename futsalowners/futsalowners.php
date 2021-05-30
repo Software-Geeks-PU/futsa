@@ -12,27 +12,27 @@
     <div class="body-lists">
         <?php 
         include 'database/db.php';
-        $selectQuery = "SELECT * from futsaladmin  ";
+        $selectQuery = "SELECT * from futsal  ";
         $query = mysqli_query($conn , $selectQuery);
         $nums = mysqli_num_rows($query);
         while($res = mysqli_fetch_array($query)){
         ?>
         <div class="card">
-            <img src=<?php echo $res['image']; ?> alt=" Avatar" style="width:100%">
+            <img src=<?php echo $res['images']; ?> alt=" Avatar" style="width:100%">
             <hr>
 
             <div class="card-container">
-                <h2><?php echo $res['futsalname']; ?></h2>
+                <h2><?php echo $res['futsal_name']; ?></h2>
                 <div class="loc">
                     <img src="images/location.png" alt="A">
                     <p><?php echo $res['address']; ?></p>
                 </div>
                 <div class="loc">
                     <img src="images/phicon.png" alt="A">
-                    <p><?php echo $res['phonenum']; ?></p>
+                    <p><?php echo $res['phone_no']; ?></p>
                 </div>
                 <div class="btn-lists">
-                    <a href="afterlogin.php">
+                    <a href="afterlogin.php?futsal_id=<?php echo($res['futsal_id']) ?>">
                         <div class="book-btn">Book Now</div>
                     </a>
                     <div class="book-btn call-now">Call Now</div>
@@ -42,7 +42,7 @@
         </div>
         <?php
                     }
-                    ?>
+    ?>
     </div>
 </body>
 

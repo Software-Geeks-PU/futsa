@@ -1,3 +1,10 @@
+<?php if (isset($_POST['logout']))
+{
+session_destroy();
+header("location: login/userLogin/userLoginView.php");
+}
+?>
+
 <html lang="en">
 
 <head>
@@ -14,6 +21,7 @@
     <title>FUTSA</title>
 </head>
 
+
 <body>
     <!--navigation bar  -->
     <header>
@@ -23,10 +31,19 @@
                 <p><span class="t-logo">FUTSA</span></p>
             </div>
             <div class="left-header">
-                <a href="login/userLogin/userLoginView.php">Login</a>
-                </a>
-                <a href="register/registerUser/userRegisterView.php">Register</a>
-                <a href="login/adminLogin/adminLoginView.php">Admin</a>
+
+                <?php if (isset($_SESSION['email'])){ ?>
+                <form method="POST" action="">
+                    <button class="available" name='logout'>Logout</button>
+                </form>
+                <?php }else{ ?>
+                    <a href="login/userLogin/userLoginView.php">Login</a>
+                    </a>
+                    <a href="register/registerUser/userRegisterView.php">Register</a>
+                <?php } ?>
+                <?php if(isset($_SESSION['role'])  and $_SESSION['role']=='owner'){ ?>
+                    <a href="/futsa/adminPanel/adminAfterLogin.php">Admin</a>
+                <?php }?>
             </div>
         </div>
     </header>

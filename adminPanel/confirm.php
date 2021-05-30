@@ -2,8 +2,8 @@
 
     include '../database/db.php';
     error_reporting(0);
-    $time = $_GET['Ctime'];
-    $confirm = "UPDATE booktable SET flag=2 WHERE time='$time'";
+    $booking_id = $_GET['booking_id'];
+    $confirm = "UPDATE booking SET status='booked' WHERE booking_id='$booking_id'";
     $result = mysqli_query($conn,$confirm);
     
     if($result)
