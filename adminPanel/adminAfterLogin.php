@@ -19,7 +19,7 @@
    </head>
    <body>
 <header>
-<?php include('C:\xampp\htdocs\futsa\templates\header.php');  ?>
+<?php include('/futsa/templates/header.php');  ?>
 
 </header>
    <section>

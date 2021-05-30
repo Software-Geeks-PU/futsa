@@ -22,16 +22,10 @@ if(isset($_POST['register'])){
      
      //if user doesn't exists
      if(!$user){
-        $query = "INSERT INTO user Values ('','$name' , '$email' , '$password' ,  '$add' , '$phone', 'owner')";
+        $query = "INSERT INTO owner_pending Values ('','$name' , '$email' , '$password' ,  '$add' , '$phone', '$futsalName', '$image')";
         $result = mysqli_query($conn , $query);
         if($result){
-            $query2 = "INSERT INTO futsal Values ('','$futsalName' , '$name' , '$add' ,  '$phone' , '$image')";
-            $result2 = mysqli_query($conn , $query2);
-            $_SESSION['email'] = $email;
-            $_SESSION['name'] = $name;
-
-            $_SESSION['success'] = 'Your account is created.';
-            header('Location: /futsa/adminPanel/adminAfterLogin.php');
+            echo "Your Futsal Center has been sent to admin for approval, we will contact you shortly!";
         }
      } else {
          

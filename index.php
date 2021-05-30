@@ -21,14 +21,14 @@ if(isset($_SESSION['role']) and $_SESSION['role']=='owner'){
             <p>A futsal booking system</p>
         </div>
         <div class="logo-first-section">
-            <img src="src/images/logo.png" />
+            <img src="/futsa/src/images/logo.png" />
         </div>
 
         <a href="afterlogin.php">
             <div class="get-start-btn">Get Started</div>
         </a>
         <div class="first-section-big">
-            <a href="login/userLogin/userLoginView.php"> <img src="images/img.png" /></a>
+            <a href="login/userLogin/userLoginView.php"> <img src="/futsa/images/img.png" /></a>
         </div>
 
     </div>

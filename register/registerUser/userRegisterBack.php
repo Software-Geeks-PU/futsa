@@ -1,5 +1,4 @@
 <?php
-session_start();
 $errors = array();
 
 //if register button is clicked
@@ -17,19 +16,15 @@ if(isset($_POST['register'])){
      $user_check_query = "SELECT * FROM user WHERE email='$email' LIMIT 1";
      $result = mysqli_query($conn, $user_check_query);
      $user = mysqli_fetch_assoc($result);
-     
      //if user doesn't exists
      if(!$user){
-        $query = "INSERT INTO user Values ('','$username' , '$email' , '$password' ,  '$address' , '$phonenumber')";
+        $query = "INSERT INTO user Values ('','$username' , '$email' , '$password' ,  '$address' , '$phonenumber', 'user')";
         $result = mysqli_query($conn , $query);
         if($result){
-            $_SESSION['email'] = $email;
-            $_SESSION['success'] = 'Your account is created.';
-            header('Location: ../../afterlogin.php');
+            header('Location: /futsa/login/userLogin/userLoginView.php');
         }
-     } else {
-         
-         echo('Email already exists');
+        }else {
+         echo(mysqli_error($conn));
      }
 
 }
